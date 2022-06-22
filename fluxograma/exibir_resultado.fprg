@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Diego"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-21 07:30:10 "/>
+        <attribute name="created" value="RGllZ287REVTS1RPUC1UREZBNEhUOzIwMjItMDYtMjE7IjA3OjE4OjUxICI7Mjc1OA=="/>
+        <attribute name="edited" value="RGllZ287REVTS1RPUC1UREZBNEhUOzIwMjItMDYtMjE7IjA3OjMwOjEwICI7MTsyODU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Jogador 1, digite o seu movimento: &quot;" newline="True"/>
+            <declare name="mov1" type="String" array="False" size=""/>
+            <input variable="mov1"/>
+            <output expression="&quot;Jogador 2, digite o seu movimento: &quot;" newline="True"/>
+            <declare name="mov2" type="String" array="False" size=""/>
+            <input variable="mov2"/>
+            <output expression="&quot;Os movimentos digitados foram:&quot; &amp; mov1 &amp;&quot; e &quot; &amp; mov2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

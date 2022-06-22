@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Diego"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-21 07:10:44 "/>
+        <attribute name="created" value="RGllZ287REVTS1RPUC1UREZBNEhUOzIwMjItMDYtMjE7IjA2OjQ3OjE0ICI7Mjc1OA=="/>
+        <attribute name="edited" value="RGllZ287REVTS1RPUC1UREZBNEhUOzIwMjItMDYtMjE7IjA3OjEwOjQ0ICI7MTsyODYw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, nota3" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a primeira nota: &quot;" newline="False"/>
+            <input variable="nota1"/>
+            <output expression="&quot;Digite a segunda nota: &quot;" newline="False"/>
+            <input variable="nota2"/>
+            <output expression="&quot;Digite a terceira nota: &quot;" newline="True"/>
+            <input variable="nota3"/>
+            <declare name="mediaNotas" type="Real" array="False" size=""/>
+            <assign variable="mediaNotas" expression="(nota1+nota2+nota3)/3"/>
+            <if expression="mediaNotas &gt;= 7">
+                <then>
+                    <output expression="&quot;Passou no exame&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Voc&#234; n&#227;o passou direto. Insira a nota da sua recupera&#231;&#227;o: &quot;" newline="True"/>
+                    <declare name="notaExame" type="Real" array="False" size=""/>
+                    <input variable="notaExame"/>
+                    <declare name="mediaComExame" type="Real" array="False" size=""/>
+                    <assign variable="mediaComExame" expression="(notaExame + mediaNotas) / 2"/>
+                    <if expression="mediaComExame &gt;=5">
+                        <then>
+                            <output expression="&quot;Passou com exame&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Reprovado&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <declare name="continua" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe 1 para continuar ou 2 para sa&#237;r&quot;" newline="True"/>
+            <input variable="continua"/>
+        </body>
+    </function>
+</flowgorithm>
