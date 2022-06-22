@@ -7,4 +7,4 @@
 <br> <strong>- Professor Nélio Alves</strong> <br>
 <br> <strong>- Professor Anderson Fernandes Pereira</strong> <br>
 
-##### Sistemas de Informação/Estácio de Sá-RJ
+##### Curso: Sistemas de Informação/Estácio de Sá-RJ
