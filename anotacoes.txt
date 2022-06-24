@@ -1,0 +1,24 @@
+***************************************************
+*      Para consultar variáveis inteiras          *
+***************************************************
+
+- %c imprime o conteúdo da variavel com representação decimal com sinal;
+- %d ou %i imprime o conteúdo da variável com representação decimal sem sinal;
+- %u imprime o conteúdo da variável com representação decimal sem sinal;
+- %o imprime o conteúdo da variável com representação octal sem sinal;
+- %x imprime o conteúdo da variável com representação hexadecimal sem sinal;
+
+***************************************************
+*      Para consultar variáveis float             *
+***************************************************
+
+- %f imprime conteúdo da variável com representação com ponto decimal;
+- %e imprime o conteúdo da variável com representação em notação cientifica (exponencial);
+- %g formato geral, escolhe a representação mais curta entre %f e %e;
+
+
+- %s para strings
+
+- %12.3f -> (podendo ser qualquer número.) 12: Imprime 8 caracteres(em branco); 3: casas decimais.
+
+

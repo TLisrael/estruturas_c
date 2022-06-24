@@ -1,12 +1,19 @@
-/*Arquivo de entrada e saída pradrão
-Inclusão de biblioteca. Sempre no inicio do código.*/
-#include <stdio.h> 
 
-//inicio da função
-int main(){ 
-printf("Ola Mundo!\n ");
+#include <stdio.h>
 
-/*Toda função que é criada tem que retornar um valor.
- 0 = não deu erro.*/
-return(0); 
+
+using std::cout; using std::vector;
+using std::endl; using std::copy;
+
+int main() {
+    vector<int> ascii_vals {97, 98, 99, 100, 101, 102, 103};
+    vector<char> chars {};
+
+    chars.reserve(ascii_vals.size());
+    for (auto &n : ascii_vals) {
+        chars.push_back(n);
+    }
+    copy(chars.begin(), chars.end(),
+              std::ostream_iterator<char>(cout, "; "));
+
 }
