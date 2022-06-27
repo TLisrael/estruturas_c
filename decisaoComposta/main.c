@@ -1,37 +1,31 @@
 #include <stdio.h>
 
-int main()
+int main ()
 {
- puts("*******************");
- puts("*   TEMPERATURA   *");
- puts("*******************");
+  puts ("*******************");
+  puts ("*   TEMPERATURA   *");
+  puts ("*******************");
 
- int temp;
- printf("Informe a temperatura: ");
- scanf("%i", &temp);
+  int temp;
+  printf ("Informe a temperatura: ");
+  scanf ("%i" , &temp);
 
- if (temp <= 20)
- {
-  puts("Frio");
- }
- else
- {
-  if (temp <= 30)
+  if (temp <= 20)
   {
-   puts("Agradavel");
+    puts ("Frio");
   }
-  else
+  else if (temp <= 30) //Senao se
   {
-   if (temp <= 40)
-   {
-    puts("Quente");
-   }
-   else
-   {
+    puts ("Agradavel");
+  }
+  else if (temp <= 40)
+  {
+    puts ("Quente");
+  }
+  else //senao
+  {
     ("Muito Quente");
-   }
   }
- }
 
- return 0;
+  return main ();
 }

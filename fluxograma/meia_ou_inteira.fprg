@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Diego"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-06-26 06:21:11 "/>
+        <attribute name="created" value="RGllZ287REVTS1RPUC1UREZBNEhUOzIwMjItMDYtMjY7IjA1OjI0OjQzICI7Mjc1OQ=="/>
+        <attribute name="edited" value="RGllZ287REVTS1RPUC1UREZBNEhUOzIwMjItMDYtMjY7IjA2OjIxOjExICI7MzsyODYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="estudantes, idade, casal, dia" type="Integer" array="False" size=""/>
+            <output expression="&quot;Informe o dia da semana:0-Domingo, 1-Segunda, 2-Ter&#231;a,3-Quarta, 4-Quinta , 5-Sexta, 6-Sabado&quot;" newline="False"/>
+            <input variable="dia"/>
+            <if expression="dia ==1">
+                <then>
+                    <output expression="&quot;Todos pagam meia entrada&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Informe sua idade: &quot;" newline="True"/>
+                    <input variable="idade"/>
+                    <if expression="idade &lt;= 12 || idade &gt;= 65">
+                        <then>
+                            <output expression="&quot;Crian&#231;as e Idosos com mais de 65 anos pagam meia entrada.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;&#201; estudante? 1 Para Sim / 2 Para N&#227;o &quot;" newline="True"/>
+                            <input variable="estudantes"/>
+                            <if expression="estudantes == 1">
+                                <then>
+                                    <output expression="&quot;Estudantes pagam meia entrada&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;&#201; para casal? 1 para sim. 2 para nao&quot;" newline="True"/>
+                                    <input variable="casal"/>
+                                    <if expression="dia==3 &amp;&amp; casal==1">
+                                        <then>
+                                            <output expression="&quot;Paga meia entrada&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Pague a entrada inteira&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

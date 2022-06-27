@@ -1,0 +1,12 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingDelete": "always",
+  "editor.autoIndent": "brackets",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+  "editor.formatOnSaveMode": "modifications",
+  "editor.formatOnType": true,
+    "cmake.cmakePath": "/path/to/cmake"
+
+}

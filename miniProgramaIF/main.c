@@ -6,10 +6,7 @@ int main(void)
  int idade;
  char nome[50];
 
- /*
- -Aprimorar perguntando sobre carteira de motorista;
- -Aprimorar cadastro do interessado;
- */
+
 
  puts("*******************");
  puts("*    DETRAN RJ    *");
