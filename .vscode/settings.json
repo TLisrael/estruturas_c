@@ -7,6 +7,9 @@
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.formatOnSaveMode": "modifications",
   "editor.formatOnType": true,
-    "cmake.cmakePath": "/path/to/cmake"
+    "cmake.cmakePath": "/path/to/cmake",
+    "python.linting.flake8Enabled": true,
+    "python.linting.mypyEnabled": false,
+    "python.linting.enabled": true
 
 }
