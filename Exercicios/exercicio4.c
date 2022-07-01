@@ -19,11 +19,11 @@ int main ()
   int km , litro , resposta , media;
 
   printf ("Digite a quantidade de quilometros percorridos: ");
-  scanf ("%i" , &km);
+    scanf ("%i" , &km);
   printf ("Digite a quantidade de litros de gasolina / etanol: ");
-  scanf ("%i" , &litro);
+    scanf ("%i" , &litro);
   printf ("[1]Etanol ou [2]Gasolina: ");
-  scanf ("%i" , &resposta);
+    scanf ("%i" , &resposta);
 
   if (resposta == 1) {
     media = km / litro - 6;
