@@ -5,7 +5,7 @@ int main(int cont)
   float nota, media, total;
 
   total = 0; //Inicia o valor total das notas em zero, pois não há dados inseridos.
-  cont = 1; //Contador inicia pelo primeiro dado inserido.
+  cont = 1; //Contador inicia pelo número desejado
 
   while (cont <= 4) // ENQUANTO o contador for menor ou igual a quatro
   {
