@@ -1,0 +1,9 @@
+-> Permite construir estruturas de loop para casos de onde se conhece de antemão o numero de repetições que devem ser realizadas (numero finito de laços);
+
+-> Por exemplo, se soubermos de antemão que o laço deve se repetir 10x, podemos utiizar a estrutura for.
+
+-> Sintaxr de for em C
+
+for(i = inicio; fim; incremento){
+  instruções
+}
