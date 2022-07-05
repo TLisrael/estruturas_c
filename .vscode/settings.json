@@ -10,6 +10,13 @@
     "cmake.cmakePath": "/path/to/cmake",
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": false,
-    "python.linting.enabled": true
+    "python.linting.enabled": true,
+    "files.associations": {
+      "*.html": "html",
+      "**/templates/*.html": "django-html",
+      "**/templates/*": "django-txt",
+      "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+      "cmath": "c"
+    }
 
 }
